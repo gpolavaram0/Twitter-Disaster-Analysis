@@ -15,9 +15,13 @@ The main objective of this project is to explore the machine learning, NLP techn
 
 # Data Sources
 Initial csv files were imported from Kaggle database and stored in our github data folder; Data/manually_cleaned/
+
 •	sample_submisstion.csv
+
 •	test.csv
+
 •	train.csv
+
 •	train_ready.csv(Cleaned Data)
 
 # Technique/Technology
