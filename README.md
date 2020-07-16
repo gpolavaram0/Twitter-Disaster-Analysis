@@ -30,7 +30,7 @@ Initial csv files were imported from Kaggle database and stored in our github da
 # Files in the repository:
 •	nlp.ipynb(cleaning of data)
 •	nlpregrex.ipynb(finalized data)
-•	attemptv1.ipynb
+•	attemptv1.ipynb(working file for model selection)
 •	xx
 
 # Other Sources
