@@ -28,8 +28,10 @@ Initial csv files were imported from Kaggle database and stored in our github da
 *Python/Pandas, was used to initial cleaning and visualizing the data. Pyspark was used for data categorization purpose. 
 
 # Files in the repository:
-•	Xxx
-•	xxx
+•	nlp.ipynb(cleaning of data)
+•	nlpregrex.ipynb(finalized data)
+•	attemptv1.ipynb(working file for model selection)
+•	xx
 
 # Other Sources
 
