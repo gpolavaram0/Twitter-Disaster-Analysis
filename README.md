@@ -25,7 +25,17 @@ Initial csv files were imported from Kaggle database and stored in our github da
 •	train_ready.csv(Cleaned Data)
 
 # Technique/Technology
-*Python/Pandas, was used to initial cleaning and visualizing the data. Pyspark was used for data categorization purpose. 
+
+•	Cleaned using Regex in Python
+•	Stored in AWS bucket
+•	Google Colab for model creation and testing
+•	Pyspark for creation of classification models and model testing
+•	Naïve Bayes
+•	Random Forest
+•	Logistic Regression
+•	SVC
+•	MNB
+•	SGDC
 
 # Files in the repository:
 •	nlp.ipynb(cleaning of data)
