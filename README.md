@@ -11,7 +11,7 @@ GitHub Pages link – https:// github.com/gpolavaram0/cwrubootcampfinalproject/
 https://docs.google.com/document/d/1dWqQQi0zPpxy2qPJKM-_X0JHH4bMWItunxdRK1YuBpk/edit?usp=sharing
 
 # Background
-The main objective of this project is to explore the machine learning, NLP techniques and combined with our other data analytical tools to analyze disaster tweets. Our model will determine the authenticity of these disaster tweets. Decided to partake in the Real or Not? NLP with Disaster Tweets Kaggle competition aimed at producing an accurate model for tweet analysis.
+The main objective of this project is to explore the machine learning, NLP techniques and combined with our other data analytical tools to analyze disaster tweets. Decided to partake in the Real or Not? NLP with Disaster Tweets Kaggle competition aimed at producing an accurate model for tweet analysis. Our model will determine the authenticity of these disaster tweets.
 Major Objective: Accurate classification of tweets as either discussing disasters or not. 
 
 
