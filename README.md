@@ -28,7 +28,7 @@ Initial csv files were imported from Kaggle database and stored in our github da
 
 # Technique/Technology
 
-•	Cleaned using Regex in Python
+•	Data cleaning by using Regex in Python
 •	Stored in AWS bucket
 •	Google Colab for model creation and testing
 •	Pyspark for creation of classification models and model testing
