@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/about.css"/>
 	</head>
 	<body class="subpage">
 
@@ -32,7 +33,7 @@
 			<section id="One" class="wrapper style3">
 				<div class="inner">
 					<header class="align-center">
-						<p>Learn about the Model.</p>
+						<p style="color:beige!important; opacity: .5;">Learn about the Model</p>
 						<h2>Naive Bayes Model</h2>
 					</header>
 				</div>
@@ -48,6 +49,20 @@
 								<h2>Purpose</h2>
 							</header>
 							<p>The goal of this algorithm is to accurately determine whether a tweet is discussing a disaster or not. By using thousands of tweets as raw data we trained our model to classify them as disaster tweets or not. These kinds of models are used everyday in almost everything we do, from speech to text (or text to speech), online shopping, search autocompletes, autocorrect and more! The whole marketing industry spends millions every year on buzz word research with things like natural language processing models. With this in mind we went forward with the creation of our model.</p>
+						</div>
+						<div class="content">
+							<header class="align-center">
+								<p>Creating conformity within the text</p>
+								<h2>Data Cleaning</h2>
+							</header>
+							<p>Tweets are a unique form of communication. While this uniqueness keeps Twitter popular as a form of social media it makes it incredibly hard to analyze them as data. We used a multi-step process to take the tweet and turn it into text that is consistant in spelling and grammar. It was also important to remove all punctuation and turn contractions into their full words. The biggest issue is that some people will add extra lines to there tweets which need to be turned into a single line so the tweet only takes up a single line of data. These steps allow the accurate calculation of the frequency of words appearing. We also stripped out the hastags, mentions, and urls from the tweets and kept them in seperate column in the dataset.</p>
+						</div>
+						<div class="content">
+							<header class="align-center">
+								<p>Sending data into the Pipline</p>
+								<h2>Machine Learning Pipeline</h2>
+							</header>
+							<p>Even with clean text data a computer can not understand words. To create our model we need to turn the text into numbers that represent the words. To do this we create a tokenizer, that turns the tweet into a list of words Then a function that removes what is called "Stop Words" which are words that appear so frequently in the English language they provide no statistical meaning in analysis Followed by a function that turns the list of filtered words into a vector containing a unique id number for each word and a number representing the amount of times it appears. Finally pass it through an IDF or "Inverse Document Frequency" which takes the vectors and reverses them so words that appear less have higher weights in the overall model. These IDFs are then combined into a single feature vector which is passed into the final model.</p>
 						</div>
 						<div class="content">
 							<header class="align-center">
