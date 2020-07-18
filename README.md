@@ -3,6 +3,8 @@
 # CWRU Data Analytics Bootcamp 2020
 GitHub Pages link – https:// github.com/gpolavaram0/cwrubootcampfinalproject/
 
+website link - https://gpolavaram0.github.io/cwrubootcampfinalproject/
+
 # Real or not? Using Machine Learning to Identify Tweets
 
 # Group 4: Ryan Klueg, Goutham Polavaram, Ali Rizvi, Ibrahim Oumar 
