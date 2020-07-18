@@ -47,14 +47,16 @@
 								<p>Background on the model</p>
 								<h2>Purpose</h2>
 							</header>
-							<p>The goal of this algorithm is to accurately determine whether a tweet is discussing a disaster or not. By using thousands of tweets as raw data we trained our model to classify them as disaster tweets or not.</p>
+							<p>The goal of this algorithm is to accurately determine whether a tweet is discussing a disaster or not. By using thousands of tweets as raw data we trained our model to classify them as disaster tweets or not. These kinds of models are used everyday in almost everything we do, from speech to text (or text to speech), online shopping, search autocompletes, autocorrect and more! The whole marketing industry spends millions every year on buzz word research with things like natural language processing models. With this in mind we went forward with the creation of our model.</p>
 						</div>
 						<div class="content">
 							<header class="align-center">
 								<p>The Model</p>
 								<h2>Naive Bayes</h2>
 							</header>
-							<p>Our current model makes use of a Naive Bayes model to classify the tweets. Naive Bayes takes the tweets and uses features vectors to create probability estimates to determine the class of a tweet based on its text.</p>
+							<p>Our current model makes use of a Naive Bayes model to classify the tweets. Naive Bayes takes the tweets and uses features vectors to create probability estimates to determine the class of a tweet based on its text.
+							These features compare the frequency of word appearance in all of the tweets we trained it on as well as the individual tweet itself to the appearance of every other word and creates a probability based off the classifications given to train the model. It also takes in a Lidstone smoothing parameter, which was set to 1.1, to create a psuedo count and ensure no probability estimates are zero. When a probability estimate is zero any probability calculated with that estimate will also be zero which breaks the model, which creates a need for the smoothing parameter.
+							</p>
 							<p>Our model has an 80.11% accuracy at determining if a tweet is talking about a disaster or not.</p>
 						</div>
 					</div>
