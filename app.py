@@ -35,11 +35,20 @@ def welcome():
     # return render_template("index.html")
     return "sadgfd"
 
-@app.route("/about")
-def team():
+@app.route("/index.html")
+def index():
 
     return render_template("index.html")
 
+@app.route("/about.html")
+def about():
+
+    return render_template("about.html")
     
+@app.route("/about2.html")
+def about2():
+
+    return render_template("about2.html")
+
 if __name__ == '__main__':
     app.run(debug=True)
