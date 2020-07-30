@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<!--
+	Hielo by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Disaster or Not? NLP with Disaster Tweets</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/about.css"/>
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="index.html">Disaster Tweet Recognition</a></div>
+				<a href="#menu">Menu</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">Model</a></li>
+					<li><a href="about2.html">Team Bio</a></li>
+				</ul>
+			</nav>
+
+		<!-- One -->
+			<section id="One" class="wrapper style3">
+				<div class="inner">
+					<header class="align-center">
+						<p style="color:beige!important; opacity: .5;">Learn about the Model</p>
+						<h2>Naive Bayes Model</h2>
+					</header>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="wrapper style2">
+				<div class="inner">
+					<div class="box">
+						<div class="content">
+							<header class="align-center">
+								<p>Background on the model</p>
+								<h2>Purpose</h2>
+							</header>
+							<p>The goal of this algorithm is to accurately determine whether a tweet is discussing a disaster or not. By using thousands of tweets as raw data we trained our model to classify them as disaster tweets or not. These kinds of models are used everyday in almost everything we do, from speech to text (or text to speech), online shopping, search autocompletes, autocorrect and more! The whole marketing industry spends millions every year on buzz word research with things like natural language processing models. With this in mind we went forward with the creation of our model.</p>
+						</div>
+						<div class="content">
+							<header class="align-center">
+								<p>Creating conformity within the text</p>
+								<h2>Data Cleaning</h2>
+							</header>
+							<p>Tweets are a unique form of communication. While this uniqueness keeps Twitter popular as a form of social media it makes it incredibly hard to analyze them as data. We used a multi-step process to take the tweet and turn it into text that is consistant in spelling and grammar. It was also important to remove all punctuation and turn contractions into their full words. The biggest issue is that some people will add extra lines to there tweets which need to be turned into a single line so the tweet only takes up a single line of data. These steps allow the accurate calculation of the frequency of words appearing. We also stripped out the hastags, mentions, and urls from the tweets and kept them in seperate column in the dataset.</p>
+						</div>
+						<div class="content">
+							<header class="align-center">
+								<p>Sending data into the Pipline</p>
+								<h2>Machine Learning Pipeline</h2>
+							</header>
+							<p>Even with clean text data a computer can not understand words. To create our model we need to turn the text into numbers that represent the words. To do this we create a tokenizer, that turns the tweet into a list of words Then a function that removes what is called "Stop Words" which are words that appear so frequently in the English language they provide no statistical meaning in analysis Followed by a function that turns the list of filtered words into a vector containing a unique id number for each word and a number representing the amount of times it appears. Finally pass it through an IDF or "Inverse Document Frequency" which takes the vectors and reverses them so words that appear less have higher weights in the overall model. These IDFs are then combined into a single feature vector which is passed into the final model.</p>
+						</div>
+						<div class="content">
+							<header class="align-center">
+								<p>The Model</p>
+								<h2>Naive Bayes</h2>
+							</header>
+							<p>Our current model makes use of a Naive Bayes model to classify the tweets. Naive Bayes takes the tweets and uses features vectors to create probability estimates to determine the class of a tweet based on its text.
+							These features compare the frequency of word appearance in all of the tweets we trained it on as well as the individual tweet itself to the appearance of every other word and creates a probability based off the classifications given to train the model. It also takes in a Lidstone smoothing parameter, which was set to 1.1, to create a psuedo count and ensure no probability estimates are zero. When a probability estimate is zero any probability calculated with that estimate will also be zero which breaks the model, which creates a need for the smoothing parameter.
+							</p>
+							<p>Our model has an 80.11% accuracy at determining if a tweet is talking about a disaster or not.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+					</ul>
+				</div>
+				<div class="copyright">
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
