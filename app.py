@@ -35,10 +35,10 @@ def welcome():
     # return render_template("index.html")
     return "sadgfd"
 
-@app.route("/about.html")
+@app.route("/about")
 def team():
 
-    return render_template("static/index.html")
+    return render_template("index.html")
 
     
 if __name__ == '__main__':
