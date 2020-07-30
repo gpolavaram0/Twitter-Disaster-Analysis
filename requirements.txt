@@ -38,7 +38,6 @@ Keras-Applications==1.0.8
 Keras-Preprocessing==1.1.2
 kiwisolver==1.2.0
 Markdown==3.2.2
-matplotlib==3.2.1
 mrjob==0.7.3
 murmurhash==1.0.2
 oauthlib==3.1.0
