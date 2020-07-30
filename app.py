@@ -38,7 +38,7 @@ def welcome():
 @app.route("/about.html")
 def team():
 
-    return render_template("index.html")
+    return render_template("docs/index.html")
 
     
 if __name__ == '__main__':
