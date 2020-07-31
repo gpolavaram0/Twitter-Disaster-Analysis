@@ -34,7 +34,7 @@ app._static_folder = 'static/'
 # Flask Routes
 #################################################
 
-new_model = tf.keras.models.load_model('D:/Users/Goutham/Documents/BOOTCAMP/76_64.h5')
+new_model = tf.keras.models.load_model('76_64.h5')
 
 padded = [[   2,    1,    1,    7, 2910,   38, 2792,    1, 2629,    1,   12,           2, 2982,    1, 1052,   42,    1,  113,    5,    1,    2, 2105,         818,   28, 2629,    1,    1, 3228]]
 
