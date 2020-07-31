@@ -45,7 +45,7 @@ padded = [[   2,    1,    1,    7, 2910,   38, 2792,    1, 2629,    1,   12,    
 def test_func():
     return "test_funct_str"
 
-new_model = tf.keras.models.load_model('D:/Users/Goutham/Documents/BOOTCAMP/76_64.h5')
+new_model = tf.keras.models.load_model('76_64.h5')
 
 ####################
 
