@@ -28,7 +28,7 @@ six==1.15.0
 soupsieve==2.0.1
 tensorboard==2.2.1
 tensorboard-plugin-wit==1.6.0.post3
-tensorflow==1.15
+tensorflow-cpu==1.15.0
 tensorflow-estimator==1.15.1
 tqdm==4.46.1
 urllib3==1.25.9
