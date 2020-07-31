@@ -16,7 +16,6 @@ app._static_folder = 'static/'
 ##################################
 
 # # Connects to the database using the app config
-db = SQLAlchemy(app)
 
 #################################################
 # Flask Routes
