@@ -19,9 +19,11 @@ def tweet_cleaner(s):
 def tweet_tokenizer(text):
     # word_index = pickle.load(open(r"word_index.pickle", "rb" ))
 
-    file = open(r"D:\Users\Goutham\Documents\BOOTCAMP\Bootcamp Final Project\word_index.pickle",'rb')
+#     file = open(r"D:\Users\Goutham\Documents\BOOTCAMP\Bootcamp Final Project\word_index.pickle",'rb')
+    file = open(r"word_index.pickle",'rb')
 
-    token_file = open(r"D:\Users\Goutham\Documents\BOOTCAMP\Bootcamp Final Project\tokenizer.pickle",'rb')
+#     token_file = open(r"D:\Users\Goutham\Documents\BOOTCAMP\Bootcamp Final Project\tokenizer.pickle",'rb')
+    token_file = open(r"tokenizer.pickle",'rb')
 
     word_index = pickle.load(file)
 
