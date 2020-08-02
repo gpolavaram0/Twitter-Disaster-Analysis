@@ -2,8 +2,6 @@ import tweepy
 import time
 import os
 
-
-# consumer_key = "yhrpkTLNagNZI6ospVftHJ9Yh"
 consumer_key = os.environ["consumer_key"]
 consumer_secret = os.environ["consumer_secret"]
 access_token = "1260032178907279362-aMgACaF9WHWggwpfMn6EeJTGryKOuM"
