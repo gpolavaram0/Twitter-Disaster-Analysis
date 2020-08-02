@@ -30,8 +30,8 @@ def AP_tweet():
 
 
     tweets = []
-    # username = 'AP'
-    username = 'BBCWorld'
+    username = 'AP'
+#     username = 'BBCWorld'
     count = 20
     try: 
     # Pulling individual tweets from query
