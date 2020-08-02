@@ -6,7 +6,8 @@ import time
 
 
 # %%
-consumer_key = "yhrpkTLNagNZI6ospVftHJ9Yh"
+# consumer_key = "yhrpkTLNagNZI6ospVftHJ9Yh"
+
 consumer_secret = "f93J3NZBoZ7m3nMgy3FH3LlLPzNbxN6Td1EyaidJi6OtGEvnjV"
 access_token = "1260032178907279362-aMgACaF9WHWggwpfMn6EeJTGryKOuM"
 access_token_secret = "gwmoo59rWFzdRxfBr0hXYi0vIceqvw7JLxUTWedVu1w7h"
