@@ -1,5 +1,6 @@
 import tweepy
 import time
+import os
 
 
 # consumer_key = "yhrpkTLNagNZI6ospVftHJ9Yh"
@@ -15,8 +16,6 @@ api = tweepy.API(auth,wait_on_rate_limit=True)
 
 
 def AP_tweet():
-    import tweepy
-    import time
 
 
 #     consumer_key = "yhrpkTLNagNZI6ospVftHJ9Yh"
