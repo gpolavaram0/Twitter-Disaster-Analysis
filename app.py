@@ -39,7 +39,7 @@ app._static_folder = 'static/'
 #################################################
 ap_tweet_list = tweet_scrape.AP_tweet("AP")
 
-new_model = tf.keras.models.load_model('76_64.h5')
+new_model = tf.keras.models.load_model('D:/Users/Goutham/Documents/BOOTCAMP/76_64.h5')
 
 padded = [[   2,    1,    1,    7, 2910,   38, 2792,    1, 2629,    1,   12,           2, 2982,    1, 1052,   42,    1,  113,    5,    1,    2, 2105,         818,   28, 2629,    1,    1, 3228]]
 
@@ -52,7 +52,12 @@ def tweet_full(text):
     else:
         dis_des = "NOT A DISASTER"
     
-    return [dis_perc,dis_des,cleaned_test_tweet]
+    # dis_perc = "%" + str(numpy.round((dis_perc * 100), 2))
+    dis_perc = dis_perc[0][0] * 100
+
+    dis_perc = str(round(dis_perc,2)) + "%"
+    
+    return dis_perc,dis_des
 
 
 ap1, ap2, ap3, ap4, ap5, ap6, ap7, ap8, ap9, ap10, ap11, ap12, ap13, ap14, ap15, ap16, ap17, ap18, ap19, ap20 = ap_tweet_list[1][0], ap_tweet_list[1][1], ap_tweet_list[1][2], ap_tweet_list[1][3], ap_tweet_list[1][4], ap_tweet_list[1][5], ap_tweet_list[1][6], ap_tweet_list[1][7], ap_tweet_list[1][8], ap_tweet_list[1][9], ap_tweet_list[1][10], ap_tweet_list[1][11], ap_tweet_list[1][12], ap_tweet_list[1][13], ap_tweet_list[1][14], ap_tweet_list[1][15], ap_tweet_list[1][16], ap_tweet_list[1][17], ap_tweet_list[1][18], ap_tweet_list[1][19]
