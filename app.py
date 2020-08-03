@@ -37,11 +37,9 @@ app._static_folder = 'static/'
 #################################################
 # Flask Routes
 #################################################
-ap_tweet_list = tweet_scrape.AP_tweet()
-print(ap_tweet_list)
+ap_tweet_list = tweet_scrape.AP_tweet("AP")
 
-# new_model = tf.keras.models.load_model('D:/Users/Goutham/Documents/BOOTCAMP/76_64.h5')
-new_model = tf.keras.models.load_model('76_64.h5')
+new_model = tf.keras.models.load_model('D:/Users/Goutham/Documents/BOOTCAMP/76_64.h5')
 
 padded = [[   2,    1,    1,    7, 2910,   38, 2792,    1, 2629,    1,   12,           2, 2982,    1, 1052,   42,    1,  113,    5,    1,    2, 2105,         818,   28, 2629,    1,    1, 3228]]
 
@@ -115,11 +113,26 @@ def test():
     
     return "AP_123"
 
-@app.route('/', methods=['POST'])
-def welcome_post():
-    text = request.form['text']
-    processed_text = text.upper()
-    return processed_text
+@app.route("/", methods=["POST", "GET"])
+def login():
+    if request.method == "POST":
+        try:
+            user = request.form["nm"]
+        except:
+            user = "reuters"
+
+        # userInput = tweet_scrape.AP_tweet("reuters")
+        ap_tweet_list = tweet_scrape.AP_tweet(user)
+        
+
+        ap1, ap2, ap3, ap4, ap5, ap6, ap7, ap8, ap9, ap10, ap11, ap12, ap13, ap14, ap15, ap16, ap17, ap18, ap19, ap20 = ap_tweet_list[1][0], ap_tweet_list[1][1], ap_tweet_list[1][2], ap_tweet_list[1][3], ap_tweet_list[1][4], ap_tweet_list[1][5], ap_tweet_list[1][6], ap_tweet_list[1][7], ap_tweet_list[1][8], ap_tweet_list[1][9], ap_tweet_list[1][10], ap_tweet_list[1][11], ap_tweet_list[1][12], ap_tweet_list[1][13], ap_tweet_list[1][14], ap_tweet_list[1][15], ap_tweet_list[1][16], ap_tweet_list[1][17], ap_tweet_list[1][18], ap_tweet_list[1][19]
+        ch1, ch2, ch3, ch4, ch5, ch6, ch7, ch8, ch9, ch10, ch11, ch12, ch13, ch14, ch15, ch16, ch17, ch18, ch19, ch20 = tweet_full(ap_tweet_list[0][0]), tweet_full(ap_tweet_list[0][1]), tweet_full(ap_tweet_list[0][2]), tweet_full(ap_tweet_list[0][3]), tweet_full(ap_tweet_list[0][4]), tweet_full(ap_tweet_list[0][5]), tweet_full(ap_tweet_list[0][6]), tweet_full(ap_tweet_list[0][7]), tweet_full(ap_tweet_list[0][8]), tweet_full(ap_tweet_list[0][9]), tweet_full(ap_tweet_list[0][10]), tweet_full(ap_tweet_list[0][11]), tweet_full(ap_tweet_list[0][12]), tweet_full(ap_tweet_list[0][13]), tweet_full(ap_tweet_list[0][14]), tweet_full(ap_tweet_list[0][15]), tweet_full(ap_tweet_list[0][16]), tweet_full(ap_tweet_list[0][17]), tweet_full(ap_tweet_list[0][18]), tweet_full(ap_tweet_list[0][19])
+
+        # ap1, ap2, ap3, ap4, ap5, ap6, ap7, ap8, ap9, ap10, ap11, ap12, ap13, ap14, ap15, ap16, ap17, ap18, ap19, ap20 = ap_tweet_list[1][0], ap_tweet_list[1][1], ap_tweet_list[1][2], ap_tweet_list[1][3], ap_tweet_list[1][4], ap_tweet_list[1][5], ap_tweet_list[1][6], ap_tweet_list[1][7], ap_tweet_list[1][8], ap_tweet_list[1][9], ap_tweet_list[1][10], ap_tweet_list[1][11], ap_tweet_list[1][12], ap_tweet_list[1][13], ap_tweet_list[1][14], ap_tweet_list[1][15], ap_tweet_list[1][16], ap_tweet_list[1][17], ap_tweet_list[1][18], ap_tweet_list[1][19]
+        # ch1, ch2, ch3, ch4, ch5, ch6, ch7, ch8, ch9, ch10, ch11, ch12, ch13, ch14, ch15, ch16, ch17, ch18, ch19, ch20 = tweet_full(ap_tweet_list[0][0]), tweet_full(ap_tweet_list[0][1]), tweet_full(ap_tweet_list[0][2]), tweet_full(ap_tweet_list[0][3]), tweet_full(ap_tweet_list[0][4]), tweet_full(ap_tweet_list[0][5]), tweet_full(ap_tweet_list[0][6]), tweet_full(ap_tweet_list[0][7]), tweet_full(ap_tweet_list[0][8]), tweet_full(ap_tweet_list[0][9]), tweet_full(ap_tweet_list[0][10]), tweet_full(ap_tweet_list[0][11]), tweet_full(ap_tweet_list[0][12]), tweet_full(ap_tweet_list[0][13]), tweet_full(ap_tweet_list[0][14]), tweet_full(ap_tweet_list[0][15]), tweet_full(ap_tweet_list[0][16]), tweet_full(ap_tweet_list[0][17]), tweet_full(ap_tweet_list[0][18]), tweet_full(ap_tweet_list[0][19])
+        return render_template("customtweetchecker.html", **locals())
+    else:
+        return render_template("customtweetchecker.html", userInput = tweet_scrape.AP_tweet("elonmusk"))
 
 # @app.route('/', methods=['POST'])
 # def welcome_post():

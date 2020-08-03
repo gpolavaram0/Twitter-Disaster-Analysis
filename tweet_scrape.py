@@ -1,11 +1,11 @@
 import tweepy
 import time
-import os
 
-consumer_key = os.environ["consumer_key"]
-consumer_secret = os.environ["consumer_secret"]
+
+consumer_key = "yhrpkTLNagNZI6ospVftHJ9Yh"
+consumer_secret = "f93J3NZBoZ7m3nMgy3FH3LlLPzNbxN6Td1EyaidJi6OtGEvnjV"
 access_token = "1260032178907279362-aMgACaF9WHWggwpfMn6EeJTGryKOuM"
-access_token_secret = os.environ["access_token_secret"]
+access_token_secret = "gwmoo59rWFzdRxfBr0hXYi0vIceqvw7JLxUTWedVu1w7h"
 
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
@@ -13,7 +13,17 @@ auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth,wait_on_rate_limit=True)
 
 
-def AP_tweet():
+def AP_tweet(twitter_handle):
+    if twitter_handle == '':
+        twitter_handle = "AP"
+    else:
+        pass
+
+
+    consumer_key = "yhrpkTLNagNZI6ospVftHJ9Yh"
+    consumer_secret = "f93J3NZBoZ7m3nMgy3FH3LlLPzNbxN6Td1EyaidJi6OtGEvnjV"
+    access_token = "1260032178907279362-aMgACaF9WHWggwpfMn6EeJTGryKOuM"
+    access_token_secret = "gwmoo59rWFzdRxfBr0hXYi0vIceqvw7JLxUTWedVu1w7h"
 
 
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
@@ -22,8 +32,8 @@ def AP_tweet():
 
 
     tweets = []
-    username = 'thehill'
-#     username = 'BBCWorld'
+    # username = 'AP'
+    username = twitter_handle
     count = 20
     try: 
     # Pulling individual tweets from query
