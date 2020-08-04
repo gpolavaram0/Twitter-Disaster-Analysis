@@ -36,7 +36,7 @@
 				<div class="inner">
 					<header class="align-center">
 						<p style="color:beige!important; opacity: .5;">Learn about the Model</p>
-						<h2>Naive Bayes Model</h2>
+						<h2>Neural Network</h2>
 					</header>
 				</div>
 			</section>
@@ -69,7 +69,7 @@
 						<div class="content">
 							<header class="align-center">
 								<p>The Model</p>
-								<h2>Naive Bayes</h2>
+								<h2>Neural Network</h2>
 							</header>
 							<p>Our current model makes use of a Naive Bayes model to classify the tweets. Naive Bayes takes the tweets and uses features vectors to create probability estimates to determine the class of a tweet based on its text.
 							These features compare the frequency of word appearance in all of the tweets we trained it on as well as the individual tweet itself to the appearance of every other word and creates a probability based off the classifications given to train the model. It also takes in a Lidstone smoothing parameter, which was set to 1.1, to create a psuedo count and ensure no probability estimates are zero. When a probability estimate is zero any probability calculated with that estimate will also be zero which breaks the model, which creates a need for the smoothing parameter.
