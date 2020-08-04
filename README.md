@@ -1,9 +1,10 @@
 # Final Project # 3
 
 # CWRU Data Analytics Bootcamp 2020
-GitHub Pages link – https:// github.com/gpolavaram0/cwrubootcampfinalproject/
 
-website link - https://gpolavaram0.github.io/cwrubootcampfinalproject/
+Website link - https://cwru.herokuapp.com/
+
+GitHub Pages link – https:// github.com/gpolavaram0/cwrubootcampfinalproject/
 
 # Real or not? Using Machine Learning to Identify Tweets
 
