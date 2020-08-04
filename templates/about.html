@@ -9,8 +9,18 @@
 		<title>Disaster or Not? NLP with Disaster Tweets</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="../static/assets/css/main.css" />
-		<link rel="stylesheet" href="../static/assets/css/about.css"/>
+
+		<p>
+		<div class="img-container"><link rel="stylesheet" href="../static/assets/css/main.css" /></div>
+		<div class="img-container"><link rel="stylesheet" href="../static/assets/css/about.css"/></div>
+		</p>
+
+		<style>
+		.img-container {
+  		display: flex;
+	  	justify-content: center;
+		}</style>
+
 	</head>
 	<body class="subpage">
 
@@ -50,6 +60,8 @@
 								<h2>Purpose</h2>
 							</header>
 							<p>The goal of this algorithm is to accurately determine whether a tweet is discussing a disaster or not. By using thousands of tweets as raw data we trained our model to classify them as disaster tweets or not. These kinds of models are used everyday in almost everything we do, from speech to text (or text to speech), online shopping, search autocompletes, autocorrect and more! The whole marketing industry spends millions every year on buzz word research with things like natural language processing models. With this in mind we went forward with the creation of our model.</p>
+							<img id="imgcontainer" src="../static/images/truedisas.jpg" alt="" />
+							<img id="imgcontainer" src="../static/images/falsedisas.jpg" alt="" />
 						</div>
 						<div class="content">
 							<header class="align-center">
@@ -70,10 +82,12 @@
 								<p>The Model</p>
 								<h2>Neural Network</h2>
 							</header>
-							<p>Our current model makes use of a Naive Bayes model to classify the tweets. Naive Bayes takes the tweets and uses features vectors to create probability estimates to determine the class of a tweet based on its text.
-							These features compare the frequency of word appearance in all of the tweets we trained it on as well as the individual tweet itself to the appearance of every other word and creates a probability based off the classifications given to train the model. It also takes in a Lidstone smoothing parameter, which was set to 1.1, to create a psuedo count and ensure no probability estimates are zero. When a probability estimate is zero any probability calculated with that estimate will also be zero which breaks the model, which creates a need for the smoothing parameter.
+							<p>Our model uses a Neural Network with 2 layers, 28 node input, and a 2 node out put to process the Tweets. The first step of the process is tokenization, where the words of the input sentence are broken up into individual words. Next, the words are assigned an individual number in accordance with the corpus word index. After that, the sentences are converted into vectors, which are then embedded. Last but not least, the vectors are ready to be inputted into the Neural Network.
+							
 							</p>
-							<p>Our model has an 80.11% accuracy at determining if a tweet is talking about a disaster or not.</p>
+							<div class="img-container"><img src="../static/images/tokenization.JPG" alt="" /></div>
+							<div class="img-container"><img src="../static/images/simple_neural_network_header-768x377.jpg" alt="" /></div>
+							<p>Our model has an 76.64% accuracy at determining if a Tweet is talking about a disaster or not.</p>
 						</div>
 					</div>
 				</div>
