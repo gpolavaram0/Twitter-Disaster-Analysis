@@ -118,8 +118,13 @@ def test():
     
     return "AP_123"
 
-@app.route("/", methods=["POST", "GET"])
-def login():
+@app.route("/")
+def slash():
+
+    return render_template("index.html")
+
+@app.route("/customtweetchecker.html", methods=["POST", "GET"])
+def customtweetchecker():
     if request.method == "POST":
         try:
             user = request.form["nm"]
