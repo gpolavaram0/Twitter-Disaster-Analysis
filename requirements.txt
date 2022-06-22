@@ -16,7 +16,7 @@ Keras-Applications==1.0.8
 Keras-Preprocessing==1.1.2
 lxml==4.5.1
 MarkupSafe==1.1.1
-numpy==1.18.4
+numpy==1.22.0
 pandas==0.25.1
 parse==1.15.0
 pyee==7.0.2
